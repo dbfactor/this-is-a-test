@@ -1,0 +1,13 @@
+name: ReusableWorkflow
+
+on:
+  workflow_call:
+
+jobs:
+  reusable_workflow_job:
+    runs-on: Windows-2022@20250209.1
+    steps:
+    - uses: actions/labeler@v5
+      with:
+        repo-token: ${{ secrets.envPAT }}
+        configuration-path: ${{ inputs.config-path }}
