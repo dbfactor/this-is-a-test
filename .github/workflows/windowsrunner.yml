@@ -1,7 +1,7 @@
-name: ReusableWorkflow
+name: WindowsWorkflow
 
 on:
-  workflow_call:
+  workflow_dispatch:
 
 jobs:
   reusable_workflow_job:
